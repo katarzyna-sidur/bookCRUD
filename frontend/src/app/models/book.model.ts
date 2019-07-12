@@ -2,8 +2,8 @@ export interface Book {
     Id: number;
     Title: string;
     Author: string;
-    PublishingHouse: string;
-    PublisingYear: number;
+    HousePublishing: string;
+    YearPublishing: number;
     ISBN: string;
     Price: number;
 }

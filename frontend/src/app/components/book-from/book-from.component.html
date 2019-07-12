@@ -1,0 +1,39 @@
+<form #bookForm="ngForm">
+    <div class="form-row">
+        <div class="form-group col">
+            <label>Title</label>
+            <input type='text' class="form-control" id="title" name="title" [(ngModel)]="book.Title">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col">
+            <label>Author</label>
+            <input type='text' class="form-control" id="author" name="author" [(ngModel)]="book.Author">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col">
+            <label>Year</label>
+            <input type='text' class="form-control" id="year" name="year" [(ngModel)]="book.PublishingYear">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col">
+            <label>Publishing House</label>
+            <input type='text' class="form-control" id="publishingHouse" name="publishingHouse"
+                [(ngModel)]="book.PublishingHouse">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col">
+            <label>ISBN</label>
+            <input type='text' class="form-control" id="isbn" name="isbn" [(ngModel)]="book.ISBN">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col">
+            <label>Price</label>
+            <input type='text' class="form-control" id="price" name="price" [(ngModel)]="book.Price">
+        </div>
+    </div>
+</form>

@@ -5,6 +5,7 @@
     <div class="content-section">
         <div class="button-section">
             <button (click)="hiddenBooks = !hiddenBooks">View all books</button>
+            <button (click)="addBook()">Add book</button>
         </div>
         <div class="table-section">
             <table class="table table-hover" *ngIf="!hiddenBooks">
@@ -15,7 +16,7 @@
                     <th>Edit</th>
                     <th>Remove</th>
                 </tr>
-                <tr *ngFor="let book of books; let i = index">
+                <tr *ngFor="let book of books; let i = index" (click)="showBook(book)">
                     <td>{{i+1}}</td>
                     <td>{{book.Title}}</td>
                     <td>{{book.Author}}</td>

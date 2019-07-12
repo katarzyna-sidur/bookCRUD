@@ -17,4 +17,12 @@ export class BookService {
         return this.httpClient.get<Book[]>(this.baseUrl);
     }
 
+    getBook(id: number): Observable<Book> {
+        return this.httpClient.get<Book>(this.baseUrl + '/' + id.toString());
+    }
+
+    saveBook(book: Book): Observable<Book> {
+        return this.httpClient.post<Book>(this.baseUrl, book);
+    }
+
 }

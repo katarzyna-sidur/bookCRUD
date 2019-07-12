@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="header">
+        <h1>Book Service</h1>
+    </div>
+    <div class="content-section">
+        <div class="button-section">
+            <button (click)="hiddenBooks = !hiddenBooks">View all books</button>
+        </div>
+        <div class="table-section">
+            <table class="table table-hover" *ngIf="!hiddenBooks">
+                <tr>
+                    <th>Lp</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Edit</th>
+                    <th>Remove</th>
+                </tr>
+                <tr *ngFor="let book of books; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{book.Title}}</td>
+                    <td>{{book.Author}}</td>
+                    <td><i class="fa fa-pencil"></i></td>
+                    <td><i class="fa fa-trash"></i></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

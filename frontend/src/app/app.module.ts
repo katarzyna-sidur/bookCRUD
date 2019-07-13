@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ModalShowBookComponent } from './modals/modal-show-book/modal-show-book.component';
 import { BookFromComponent } from './components/book-from/book-from.component';
 import { ModalCreateBookComponent } from './modals/modal-create-book/modal-create-book.component';
+import { ModalUpdateBookComponent } from './modals/modal-update-book/modal-update-book.component';
 
 const appRoutes: Routes = [
     {
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
         BookPageComponent,
         ModalShowBookComponent,
         BookFromComponent,
-        ModalCreateBookComponent
+        ModalCreateBookComponent,
+        ModalUpdateBookComponent
     ],
     imports: [
         BrowserModule,
@@ -40,7 +42,8 @@ const appRoutes: Routes = [
     ],
     entryComponents: [
         ModalShowBookComponent,
-        ModalCreateBookComponent
+        ModalCreateBookComponent,
+        ModalUpdateBookComponent
     ],
     providers: [BookService],
     bootstrap: [AppComponent]

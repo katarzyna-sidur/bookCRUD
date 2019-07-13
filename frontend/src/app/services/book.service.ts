@@ -25,4 +25,12 @@ export class BookService {
         return this.httpClient.post<Book>(this.baseUrl, book);
     }
 
+    updateBook(book: Book): Observable<Book> {
+        return this.httpClient.put<Book>(this.baseUrl + '/' + book.Id.toString(), book);
+    }
+
+    deleteBook(id: number): Observable<Book> {
+        return this.httpClient.delete<Book>(this.baseUrl + '/' + id.toString());
+    }
+
 }

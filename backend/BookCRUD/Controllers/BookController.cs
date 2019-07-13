@@ -17,23 +17,31 @@ namespace BookCRUD.Controllers
             this.bookService = bookService;
         }
 
+        [HttpGet]
         public IEnumerable<BookDataAccess.Books> Get()
         {
             return bookService.Get();
         }
+
+        [HttpGet]
         public BookDataAccess.Books Get(int id)
         {
             return bookService.Get(id);
         }
+
+        [HttpPost]
         public BookDataAccess.Books Post(BookDataAccess.Books book)
         {
             return bookService.Post(book);
         }
+        [HttpPut]
         public BookDataAccess.Books Put(int id, BookDataAccess.Books book)
         {
             return bookService.Put(id, book);
         }
-        void Delete(int id)
+
+        [HttpDelete]
+        public void Delete(int id)
         {
             bookService.Delete(id);
         }

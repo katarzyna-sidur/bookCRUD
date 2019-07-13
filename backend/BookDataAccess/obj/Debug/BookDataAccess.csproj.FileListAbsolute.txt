@@ -10,3 +10,15 @@ K:\STUDIA\Programowanie\C#\BookCRUD\BookDataAccess\obj\Debug\BookDataAccess.cspr
 K:\STUDIA\Programowanie\C#\BookCRUD\BookDataAccess\obj\Debug\BookDataAccess.csproj.CopyComplete
 K:\STUDIA\Programowanie\C#\BookCRUD\BookDataAccess\obj\Debug\BookDataAccess.dll
 K:\STUDIA\Programowanie\C#\BookCRUD\BookDataAccess\obj\Debug\BookDataAccess.pdb
+K:\STUDIA\Programowanie\BookCRUD\backend\BookDataAccess\bin\Debug\BookDataAccess.dll.config
+K:\STUDIA\Programowanie\BookCRUD\backend\BookDataAccess\bin\Debug\BookDataAccess.dll
+K:\STUDIA\Programowanie\BookCRUD\backend\BookDataAccess\bin\Debug\BookDataAccess.pdb
+K:\STUDIA\Programowanie\BookCRUD\backend\BookDataAccess\bin\Debug\EntityFramework.dll
+K:\STUDIA\Programowanie\BookCRUD\backend\BookDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+K:\STUDIA\Programowanie\BookCRUD\backend\BookDataAccess\bin\Debug\EntityFramework.xml
+K:\STUDIA\Programowanie\BookCRUD\backend\BookDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+K:\STUDIA\Programowanie\BookCRUD\backend\BookDataAccess\obj\Debug\BookDataAccess.csprojAssemblyReference.cache
+K:\STUDIA\Programowanie\BookCRUD\backend\BookDataAccess\obj\Debug\BookDataAccess.csproj.CoreCompileInputs.cache
+K:\STUDIA\Programowanie\BookCRUD\backend\BookDataAccess\obj\Debug\BookDataAccess.csproj.CopyComplete
+K:\STUDIA\Programowanie\BookCRUD\backend\BookDataAccess\obj\Debug\BookDataAccess.dll
+K:\STUDIA\Programowanie\BookCRUD\backend\BookDataAccess\obj\Debug\BookDataAccess.pdb

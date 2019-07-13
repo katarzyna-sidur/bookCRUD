@@ -5,6 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { ModalShowBookComponent } from 'src/app/modals/modal-show-book/modal-show-book.component';
 import { ModalCreateBookComponent } from 'src/app/modals/modal-create-book/modal-create-book.component';
+import { ModalUpdateBookComponent } from 'src/app/modals/modal-update-book/modal-update-book.component';
 
 @Component({
     selector: 'app-book-page',
@@ -34,6 +35,19 @@ export class BookPageComponent implements OnInit {
         this.bsModalRef = this.modalService.show(ModalCreateBookComponent);
         (<ModalCreateBookComponent>this.bsModalRef.content).newBook.subscribe((data) => {
             this.books.push(data);
+        });
+    }
+
+    editBook(book: Book) {
+        this.bsModalRef = this.modalService.show(ModalUpdateBookComponent, { initialState: { book }});
+        (<ModalUpdateBookComponent>this.bsModalRef.content).book = book;
+    }
+
+    deleteBook(book: Book) {
+        this.bookService.deleteBook(book.Id).subscribe((result) => {
+            this.books = this.books.filter((item) => {
+                return item.Id !== book.Id;
+            });
         });
     }
 

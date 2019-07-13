@@ -20,8 +20,8 @@
                     <td>{{i+1}}</td>
                     <td>{{book.Title}}</td>
                     <td>{{book.Author}}</td>
-                    <td><i class="fa fa-pencil"></i></td>
-                    <td><i class="fa fa-trash"></i></td>
+                    <td><i class="fa fa-pencil" (click)="editBook(book);$event.stopPropagation()"></i></td>
+                    <td><i class="fa fa-trash" (click)="deleteBook(book);$event.stopPropagation()"></i></td>
                 </tr>
             </table>
         </div>
